@@ -20,7 +20,7 @@ class Article extends Model
     public function reviewers()
     {
         return $this->belongsToMany(User::class, Review::class)
-            ->withTimestamps()
+            ->withTimestamps('created_at','updated_at')
             ->as('reviewers');
     }
 }
