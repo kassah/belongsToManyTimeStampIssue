@@ -9,8 +9,8 @@ class Article extends Model
 {
     use HasFactory;
 
-    const CREATED_AT = 'created_at';
-    const UPDATED_AT = 'updated_at';
+    const CREATED_AT = 'created';
+    const UPDATED_AT = 'updated';
 
     /**
      * Get all of the users that belong to the team.

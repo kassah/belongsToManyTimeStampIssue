@@ -16,8 +16,8 @@ class CreateArticlesTable extends Migration
         Schema::create('articles', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->timestamp('created_at');
-            $table->timestamp('updated_at');
+            $table->timestamp('created');
+            $table->timestamp('updated');
         });
     }
 
